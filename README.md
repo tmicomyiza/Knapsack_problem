@@ -54,7 +54,7 @@ you will receive guidance on the use of the program on terminal.
     2. Otherwise, the program will randomly generate data to be used
 
 
-* The program will final results on the terminal. 
+* The program will print final results on the terminal. 
 
 * It will also write information on a file named generations.txt which will
     contain all generations that we created in order to reach the solution
