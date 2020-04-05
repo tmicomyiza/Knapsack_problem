@@ -1,6 +1,6 @@
 # Knapsack problem solver
 
-## Mico Micomyiza Theogene
+## AUTHOR:  Mico Micomyiza Theogene
 
 
 ## DESCRIPTION
@@ -59,7 +59,6 @@ you will receive guidance on the use of the program on terminal.
 * It will also write information on a file named generations.txt which will
     contain all generations that we created in order to reach the solution
 
-## Note: You cannot provide the filename name as parameter when you launch the program.
 
 
 
