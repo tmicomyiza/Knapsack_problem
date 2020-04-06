@@ -59,7 +59,7 @@ def mutation(chromosome):
         chromosome[index].status = 0
 
 
-
+    return chromosome
 
 '''
 Parameters: 
@@ -223,6 +223,12 @@ def next_generation(population):
         parent_2 = population[random.randint(0, length)]
 
         new_chromosome = crossover(parent_1, parent_2)
+        
+        # probability whether child should be mutated or not
+        mutate = random.randint(0,3)
+        if mutate == 1:
+            new_chromosome = mutation(new_chromosome)
+
         population.append(new_chromosome)
 
 
@@ -257,8 +263,14 @@ def genetic_algorithm(population):
 
 
     solution = sorted(population, key=lambda x: fitness(x), reverse=True)[0]
-    print_solution(solution)
 
+    # in case there is no solution
+    if fitness(solution) == 0:
+        print(colored("Sorry! NO SOLUTION FOUND","red"))
+        return
+
+
+    print_solution(solution)
     filename.close()
 
     
